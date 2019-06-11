@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import PropTypes from 'prop-types';
 
 
@@ -9,20 +8,17 @@ function Avatar({size, initials, backgroundColor }) {
         height: size,
         borderRadius: size/2,
         backgroundColor,
-        container: {
-            alignItems: 'center',
-            justifyContent: 'center',
-            },
-            text: {
-                color: 'white',
-                },
-                
-            
-    }
+        alignItems: 'center',
+        justifyContent: 'center',
+
+        textStyle: {
+            color:'white',
+        },       
+    };
 
     return (
-        <div style = {style}>
-        <p style ={style.text}>{initials} </p>
+        <div style= {style}>
+        <p style = {style.textStyle}> {initials} </p>
         </div>
     );
 }
