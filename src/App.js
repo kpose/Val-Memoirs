@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
     import './App.css';
     import Header from './components/Header';
-    import Avatar from  './components/Avatar';
+    import AuthorRow from  './components/AuthorRow';
 
 
     class App extends Component {
@@ -11,7 +11,13 @@ import React, { Component } from 'react';
           <Header />
 
           <div className= "Container">
-          <Avatar initials={'FL'} size={35} backgroundColor={'teal'} /> 
+          <AuthorRow
+              fullname={'First Last'}
+              linkText={'Comments'}
+              onPressLinkText={() => {
+              console.log('Pressed link!');
+              }}
+              />
           </div>
           
           </div>

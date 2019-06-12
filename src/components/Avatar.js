@@ -5,8 +5,6 @@ const text= {
     color: 'white',
     };
   
-
-
 function Avatar({ size, backgroundColor, initials}) {
     const style = {
         width: size,
