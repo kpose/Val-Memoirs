@@ -19,10 +19,10 @@ function AuthorRow({ fullname, linkText, onPressLinkText}) {
             />
             </div>
 
-            <div style={inner}> <h5 style = {text}> {fullname} </h5></div>
+            <div> <h5 style = {text}> {fullname} </h5></div>
 
             {!!linkText && (
-                <div> <button onClick={onPressLinkText}>
+                <div style={inner}> <button onClick={onPressLinkText}>
                     <h6> {linkText} </h6>
                 </button> </div>
             )}
@@ -32,7 +32,7 @@ function AuthorRow({ fullname, linkText, onPressLinkText}) {
 }
 
 const container = {
-
+   border: '1px solid #000',
   display:'flex',
   justifyContent: 'center',
   padding: '3px',
@@ -40,7 +40,8 @@ const container = {
 }
 
 const inner= {
-    margin:'10px',
+    margin:'15px',
+    
 }
 
 const text= {

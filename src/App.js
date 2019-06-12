@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
     import './App.css';
     import Header from './components/Header';
-    import AuthorRow from  './components/AuthorRow';
+    import Card from './components/Card';
+   
 
 
     class App extends Component {
@@ -11,13 +12,15 @@ import React, { Component } from 'react';
           <Header />
 
           <div className= "Container">
-          <AuthorRow
+            <Card
               fullname={'First Last'}
               linkText={'Comments'}
               onPressLinkText={() => {
-              console.log('Pressed link!');
+                console.log('Pressed link!');
               }}
+              image={{ uri: 'https://unsplash.it/600/600' }}
               />
+
           </div>
           
           </div>
