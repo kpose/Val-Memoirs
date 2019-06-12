@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-register": "^6.26.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "universal-config": "^0.3.0",
+    "unsplash-js": "^5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,5 +32,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpose/Val-Memoirs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kpose/Val-Memoirs/issues"
+  },
+  "homepage": "https://github.com/kpose/Val-Memoirs#readme"
 }
