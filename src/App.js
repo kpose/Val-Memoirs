@@ -4,12 +4,15 @@ import Header from './components/Header';
 import SearchBar from './components/SearchBar/SearchBar';
 
     class App extends Component {
+      onSearchSubmit(term) {
+        console.log(term);
+    }
       render() {
         return (
           <div>
-          <Header />
+            <Header />
           <div>
-            <SearchBar />
+            <SearchBar userSubmit={this.onSearchSubmit}/>
         </div>
           </div>
         );
