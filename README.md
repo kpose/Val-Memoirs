@@ -25,4 +25,4 @@ Click [here](https://github.com/kpose/Val-Memoirs.git) then download the .zip fi
 ```
 
 #### Deployed in Netlify
-The project is deployed in Netlify. You can find it [here](https://unruffled-raman-ddfb98.netlify.com/)
+The project is deployed in Netlify. You can find it [here](https://valimg.herokuapp.com//)
