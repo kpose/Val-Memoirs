@@ -10,16 +10,19 @@ class SearchBar extends React.Component {
 
     onFormSubmit = (event) => {
         event.preventDefault();
-        console.log(this.state.val);
+        this.props.userSubmit(this.state.val);
     }
+
+    
 
     render() {
         return (
             <div>
-                <form onSubmit={this.onFormSubmit}  className="flexContainer">
+                <form onSubmit={this.onFormSubmit} className="flexContainer">
                     <label><h2>Image Search: </h2></label>
                     <input
                         className="inputStyle"
+                        placeholder="Enter Search Query"
                         type="text"
                         value={this.state.val}
                         onChange={this.onInputChange}
